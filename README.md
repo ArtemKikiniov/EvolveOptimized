@@ -2,7 +2,7 @@
 
 ## Play
 
-https://pmotschmann.github.io/Evolve/
+https://ArtemKikiniov.github.io/Evolve/
 
 ## About
 

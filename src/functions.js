@@ -805,7 +805,7 @@ export function costMultiplier(structure,offset,base,mutiplier,cat){
     if (nqVal){
         mutiplier -= nqVal;
     }
-    if (mutiplier < 1.005){
+    if (mutiplier > 1.005){
         mutiplier = 1.005;
     }
     var count = structure === 'citizen' ? global['resource'][global.race.species].amount : (global[cat][structure] ? global[cat][structure].count : 0);
@@ -838,7 +838,7 @@ export function spaceCostMultiplier(action,offset,base,mutiplier,sector,c_min){
     if (nqVal){
         mutiplier -= nqVal;
     }
-    if (mutiplier < c_min){
+    if (mutiplier > c_min){
         mutiplier = c_min;
     }
     var count = action === 'citizen' ? global['resource'][global.race.species].amount : (global[sector][action] ? global[sector][action].count : 0);
